@@ -28,11 +28,48 @@
             </div>
         </div>
         <div class="content">
-            <h1>WhatsApp Bot Deploy</span> <br>Now</h1><br><br>
-            <p class="par"> You can deploy Levanter Md bot in these platforms:<br>
+            <h1>WhatsApp Bot Deploy</span> <br>Now</h1><br><br><br><br><br>
+<h3>
+    <div id="continuousText"></div>
 
-            </p><br><br>
-            <button class="cn"><a href="#">partner with us</a></button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var continuousText = document.getElementById('continuousText');
+            var words = ['You', 'want', 'a', 'WhatsApp', 'Bot','?', 'Muindi', 'is', 'here', 'for', 'you','.', 'Welcome!'];
+
+            var index = 0;
+            var currentText = '';
+            var interval = setInterval(function() {
+                if (index < words.length) {
+                currentText += words[index] + ' ';
+                continuousText.textContent = currentText;
+                index++;
+                }
+            }, 1500); // Change the time interval (in milliseconds) if needed
+
+            setTimeout(function() {
+                clearInterval(interval);
+                continuousText.style.display = 'none';
+            }, 20000); // Adjust the duration (in milliseconds) as per your requirement
+        });
+    </script>
+<br><br><br>
+
+<button class="cn" onclick="redirectToLink()">Click here to start</button>
+
+<script>
+  function redirectToLink() {
+    // Specify the link you want to go to
+    var targetLink = "https:muindi6602.github.io";
+
+    // Redirect to the specified link
+    window.location.href = targetLink;
+  }
+</script>
+
+
+</h3>
+
             <div class="form">
                 <h2>Login Here</h2>
                 <input type="email" name="email" placeholder="Enter Email Here">

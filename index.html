@@ -1,76 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Login & Registration Form | helpme_coder</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">Muindi</h2>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </div>
+  <div class="wrapper">
+    <div class="form-wrapper sign-in">
+      <form action="">
+        <h2>Sign-in</h2>
+        <div class="input-group">
+          <input type="text" required>
+          <label for="">Email or Username</label>
         </div>
-        <div class="content"><br><br>
-            <h1>WhatsApp Bot Deploy</span> <br>Now</h1><br><br><br><br><br>
-<h3>
-    <div id="continuousText"></div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var continuousText = document.getElementById('continuousText');
-            var words = ['You', 'want', 'a', 'WhatsApp', 'Bot','?', 'Muindi', 'is', 'here', 'for', 'you','.', 'Welcome!'];
-
-            var index = 0;
-            var currentText = '';
-            var interval = setInterval(function() {
-                if (index < words.length) {
-                currentText += words[index] + ' ';
-                continuousText.textContent = currentText;
-                index++;
-                }
-            }, 1500); // Change the time interval (in milliseconds) if needed
-
-            setTimeout(function() {
-                clearInterval(interval);
-                continuousText.style.display = 'none';
-            }, 20000); // Adjust the duration (in milliseconds) as per your requirement
-        });
-    </script>
-<br><br><br>
-
-<button class="cn" onclick="redirectToLink()">Click here to start</button>
-
-<script>
-  function redirectToLink() {
-    // Specify the link you want to go to
-    var targetLink = "https://muindi6602.github.io/";
-
-    // Redirect to the specified link
-    window.location.href = targetLink;
-  }
-</script>
-
-
-</h3>
-
-            <div class="form">
-                <h2>Login Here</h2>
-                <input type="email" name="email" placeholder="Email">
-                <input type="password" name="" placeholder="Password">
-                <!DOCTYPE html>
-                <button class="btnn" onclick="login()">Login</button>
+        <div class="input-group">
+          <input type="password" required>
+          <label for="">Password</label>
+        </div>
+        <div class="remember">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button class="btnn" onclick="login()">Login</button>
                     <div id="loginSuccessMessage"></div>
                     
                     <script>
@@ -84,21 +37,52 @@
                           }, 3000);
                         }, 0); // Simulate asynchronous login process
                       }
-                    </script>                    
-                <p class="link">Don't have any account<br>
-                    <a href="#">Sign Up</a></p>
-                <p class="liw">Log in with</p>
-                <div class="icon">
-                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                </div>
-            </div>
+                    </script>   
+        <div class="signUp-link">
+          <p>Don't have an account? <a href="#" class="signUpBtn-link">Sign Up</a></p>
         </div>
+      </form>
     </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <div class="form-wrapper sign-up">
+      <form action="">
+        <h2>Sign Up</h2>
+        <div class="input-group">
+          <input type="text" required>
+          <label for="">Username</label>
+        </div>
+        <div class="input-group">
+          <input type="email" required>
+          <label for="">Email</label>
+        </div>
+        <div class="input-group">
+          <input type="password" required>
+          <label for="">Password</label>
+        </div>
+        <div class="remember">
+          <label><input type="checkbox"> I agree to the terms & conditions</label>
+        </div>
+        <button class="btnn" onclick="SignUp()">SignUp</button>
+                    <div id="loginSuccessMessage"></div>
+                    
+                    <script>
+                      function SignUp() {
+                        // Simulate a login process (you can replace this with actual login logic)
+                        setTimeout(function() {
+                          document.getElementById('loginSuccessMessage').innerText = 'Login Successful ☑️ Redirecting!';
+                          setTimeout(function() {
+                            // Actual link for redirection
+                            window.location.href = 'https://muindi6602.github.io/';
+                          }, 3000);
+                        }, 0); // Simulate asynchronous login process
+                      }
+                    </script> 
+        <div class="signUp-link">
+          <p>Already have an account? <a href="#" class="signInBtn-link">Sign In</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <!-- code by helpme_coder -->
 </body>
-
 </html>

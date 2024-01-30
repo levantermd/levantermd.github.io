@@ -6,12 +6,21 @@ a*{
  
  .main{
      width: 100%;
-     background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(food.jpg);
+     background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
      background-position: center;
      background-size: cover;
      height: 109vh;
+     display: flexbox;
+     align-items: center;
+     justify-content: center;
+     color: grey;
  }
 
+ .body {
+    margin: 0%;
+    padding:0%;
+    background-color: #808080;
+ }
  .navbar{
     width: 1200px;
     height: 75px;
@@ -103,7 +112,24 @@ ul{
     font-size: 15px;
     border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+      }
+  
+.loginSuccessMessage {
+    margin-top: 10px;
+    align-items: center;
+    color: #3498db;
 }
+
+.errorMessage {
+    margin-top: 10px;
+    align-items: center;
+    color: #3498db;
+}
+
 .btn:focus{
     outline: none;
 }
@@ -279,4 +305,3 @@ ul{
     border-right: 2px solid #000;
     padding-right: 5px;
 }
-

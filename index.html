@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Levanter Md</title>
-</head>
+    <title>Your Page Title</title>
     <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
     <div class="main">
@@ -22,7 +22,7 @@
                 </ul>
             </div>
         </div>
-        <div class="content">
+        <div class="content"><br><br>
             <h1>WhatsApp Bot Deploy</span> <br>Now</h1><br><br><br><br><br>
 <h3>
     <div id="continuousText"></div>
@@ -67,9 +67,24 @@
 
             <div class="form">
                 <h2>Login Here</h2>
-                <input type="email" name="email" placeholder="Enter Email Here">
-                <input type="password" name="" placeholder="Enter Password Here">
-                <button class="btnn"><a href="#">Login</a></button>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="" placeholder="Password">
+                <!DOCTYPE html>
+                <button class="btnn" onclick="login()">Login</button>
+                    <div id="loginSuccessMessage"></div>
+                    
+                    <script>
+                      function login() {
+                        // Simulate a login process (you can replace this with actual login logic)
+                        setTimeout(function() {
+                          document.getElementById('loginSuccessMessage').innerText = 'Login Successful ☑️ Redirecting!';
+                          setTimeout(function() {
+                            // Actual link for redirection
+                            window.location.href = 'https://muindi6602.github.io/';
+                          }, 3000);
+                        }, 0); // Simulate asynchronous login process
+                      }
+                    </script>                    
                 <p class="link">Don't have any account<br>
                     <a href="#">Sign Up</a></p>
                 <p class="liw">Log in with</p>

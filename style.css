@@ -1,4 +1,4 @@
-*{
+a*{
     margin: 0;
     padding: 0;
  
@@ -270,4 +270,12 @@ ul{
 .icon ion-icon:hover{
     color: orange;
     
+}
+.continuousText {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    overflow: hidden;
+    border-right: 2px solid #000;
+    padding-right: 5px;
 }
